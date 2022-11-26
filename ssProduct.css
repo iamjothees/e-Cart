@@ -1,0 +1,65 @@
+.body{
+    text-align: center;
+    background-color: azure;
+}
+
+.productImageContainer{
+    background-image: url('/img/white.png');
+    background-repeat: no-repeat;
+    background: fixed;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid grey;
+    margin: 0 1vw 60px;
+    padding:0px 30px;
+    border-radius: 10px;
+}
+
+.productImageContainer *{
+    margin: 1vh 0 1vh;
+}
+
+.productName, .productPrice{
+    display: block;
+    font-size: x-large;
+}
+
+.productImage{
+    display: block;
+    background-color: antiquewhite;
+    width: 20vmax;
+    height: 20vmax;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+
+/* .productPrice{
+    display: block;
+} */
+.counter{
+    display: inline-block;
+    width: 6vmax;
+    height: 4vmax;
+    text-align: center;
+    font-size: x-large;
+}
+
+.decrementButton, .incrementButton{
+    width: 4vmax;
+    height: 4vmax;
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+}
+
+.counter::-webkit-outer-spin-button,
+.counter::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.counter{
+    -moz-appearance: textfield;
+}

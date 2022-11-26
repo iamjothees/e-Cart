@@ -1,0 +1,36 @@
+<link rel='stylesheet' href='ssCheckout.css'>
+<meta name='viewport' content='width = device-width, initial-scale = 1.0'>
+<body>
+    <div id='orderDetail'  style="text-align: center;">
+        <h2>Order Detail:</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>30ml Can</td>
+                    <td>Water Can</td>
+                    <td>5</td>
+                    <td>784/-</td>
+                    <td><a href='#' id='remove'>Remove</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Shipping Address:</h2>
+        <div id='address'>
+            <form>
+                <input type='text' name='userName' size='20' placeholder='Name' required autocomplete="name"><br>
+                <input type='text' name='addressLine1' size='20' placeholder='Address Line 1' required autocomplete="address-line1"><br>
+                <input type='text' name='addressLine2' placeholder='Address Line 2' size='20' autocomplete="address-line2"><br>
+                <input type='text' name='city' placeholder='City' size='20'><br>
+                <input type='text' name='pinCode' size='6' placeholder='Pincode' required><br>
+            </form>
+            <button id='sendButton' onclick='saveAddress()'> Place Order </button>
+        </div>
+    </div>
+</body>

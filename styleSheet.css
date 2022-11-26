@@ -1,0 +1,136 @@
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body{
+    background-color:azure;
+}
+
+.header{
+    margin-bottom: 8em;
+}
+
+.headerBar{
+    position: Fixed;
+    left: 0;
+    top: 0;
+    background-color: blueviolet;
+    height: 5em;
+    width: 100vw;
+}
+
+#menuIcon, #cartIcon{
+    position:inherit;
+    top: 2.5em;
+    transform: translateY(-50%);
+    z-index: 0;
+    font-weight:bolder;
+    color: black;
+}
+#menuIcon{    left: 1em    }
+#cartIcon{    right: 1em    }
+
+#menuContainer{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    width: 180px;
+    height: 100vh;
+    z-index: 3;
+    text-align: center;
+}
+
+#menuContainerCloseIcon{
+    color: antiquewhite;
+    position: absolute;
+    top: .5em;right: .5em;
+}
+
+.menuOptions{
+    color: antiquewhite;
+    display: inline-block;
+    width:inherit;
+    margin: 0 0 0;
+    padding: 1em 0;
+}
+
+.menuOptions:nth-child(2){
+    margin: 4em 0 0;
+}
+
+.menuOptions:hover, .menuOptions:active{
+    background-color: rgba(250, 248, 248, 0.384);
+    color: black;
+}
+
+
+.body{
+    text-align: center;
+
+}
+
+.footer{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: rgb(214, 188, 238);
+    width: 100vw;
+    height: auto;
+    margin-top: 10vh;
+    /* for menu container */
+    z-index: -1;
+}
+
+.mailIdDiv{
+    padding-left: 5vw;
+}.mailIdDiv *{
+    padding: 2px;
+}.mailIdDiv>h3{
+    color:black;
+    text-align: left;
+    padding-top: 20px;
+}.mailIdDiv>input{
+    width: 245px;
+    height: 40px;
+    font-size: medium;
+    border: 0;
+    margin: 0 0 0 2vw;
+}.mailIdDiv>button{
+    width: 250px;
+    height: 40px;
+    font-size: medium;
+    background-color:orangered;
+    color: antiquewhite;
+    font-weight: bold;
+    border: 0;
+    margin: 10px 0 0 2vw;
+}
+
+.socialMediaContact{
+    position: relative;
+    padding-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}.socialMediaContact *{
+    margin: 0 .5vw;
+}
+
+.myDetail{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 1vh;
+    text-align: center;
+}.myDetail>hr{
+    width: 70%;
+}.myDetail #myName{
+    color: rgb(250, 248, 252);
+    text-shadow: 0 0 15px black;
+} 

@@ -1,0 +1,54 @@
+.body #address{
+    text-align: left;
+    margin: 2vh 0 0 3vmax;
+}
+h2{
+    text-align: left;
+    font-size: 2.4vmax;
+}
+#orderDetail table{
+    background-color: rgba(248, 244, 248, 0.527);
+    display: inline-block;
+    justify-content: center;
+    border: .1em solid black;
+    text-align: center;
+    font-size: 1.8vmax;
+    margin-bottom: 10px;
+}
+th{
+    border-bottom: .3em solid black;
+}
+th, td{
+    padding: .3em .5em;
+}
+
+
+#address form{
+    width: 18em;
+    box-shadow: 0 0 20px black;
+}
+
+#address input{
+    font-size: 15px;
+    width: 18em;
+    padding: 1em 0 1em 1em;
+
+}#address input :not([name='pinCode']){
+    border-bottom: 0;
+}
+
+#address button{
+    margin: 1em 0 0 2em;
+    width: 14em;
+    height: 3em;
+    font-size: medium;
+    background-color:orangered;
+    color: antiquewhite;
+    font-weight: bold;
+    border: 0;
+}
+
+*:focus{
+    outline: 0;
+}
+
